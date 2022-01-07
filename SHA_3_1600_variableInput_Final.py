@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[34]:
-
-
 import binascii
 import time
 class Keccak:
@@ -119,22 +113,9 @@ class Keccak:
 
         return binascii.hexlify(self.__hash_bytes)
 
-
-# In[ ]:
-
-
-
-
-
-# In[35]:
-
-
 import time
 import matplotlib.pyplot as plt
 execution_times = []
-
-
-# In[36]:
 
 
 variant = int(input("Enter the rate value of SHA3: \n"))
@@ -158,79 +139,4 @@ print("Hash:" + str(original_hash)[2:-1] + "\nLength of Hash: " + str(len(origin
 print("Time taken for hashing: " + str(float(execution_time)) + " Seconds")
 file.close()
 # print("Average Execution Time (10 iterations): ", sum(execution_times)/len(execution_times))
-
-
-# In[14]:
-
-
-x = [1,2,3,4,5,6,7,8,9,10]
-
-
-# In[15]:
-
-
-plt.plot(x,execution_times, label="SHA3-224",color="green")
-plt.xlabel('S.No. of Execution')
-plt.ylabel('Time Taken (in seconds)')
-plt.title('SHA3-224 Execution Time (163MB)')
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
 
